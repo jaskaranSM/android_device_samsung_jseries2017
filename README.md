@@ -1,4 +1,4 @@
-## TWRP device tree for Samsung Galaxy J5 2017 (J5Y17LTE)
+## TWRP device tree for Samsung Galaxy J7 Nxt (J7velte)
 
  Copyright (C) 2018 DevKingsTeam Open-source
 
@@ -15,23 +15,13 @@
  limitations under the License.
 
 
-Add to `.repo/local_manifests/j5y17lte.xml`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project name="ananjaser1211/android_device_samsung_jxy17lte" path="device/samsung/j5y17lte" remote="github" revision="j5y17lte" />
-</manifest>
-```
-
-Then run `repo sync` to check it out.
 
 To build:
 
 ```sh
 . build/envsetup.sh
-lunch omni_j5y17lte-eng
-make -j64 recoveryimage
+lunch omni_j7velte-eng
+make -j69 recoveryimage
 ```
 
-Kernel sources are available at: https://github.com/ananjaser1211/Helios_7870
+Kernel sources are available at: https://github.com/exynos7870
